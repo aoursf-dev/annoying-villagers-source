@@ -1,0 +1,69 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Custom License"
+[[mods]]
+modId="annoyingvillagers"
+version="1.4.5"
+displayName="Annoying Villagers"
+authors="pla_is_me"
+description='''Annoying Villagers Full features from the original series !!!.'''
+[[dependencies.annoyingvillagers]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.4.4,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="epicfight"
+    mandatory=true
+    versionRange="[20.13, )"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="wom"
+    mandatory=true
+    versionRange="[2.0, )"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="combat_evolution"
+    mandatory=true
+    versionRange="[1.1.7, )"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="player_mobs"
+    mandatory=true
+    versionRange="[4.1, )"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="efclash_blade"
+    mandatory=true
+    versionRange="[1.3, )"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="efkick"
+    mandatory=true
+    versionRange="[1.0, )"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="efdancing"
+    mandatory=true
+    versionRange="[1.0, )"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.annoyingvillagers]]
+    modId="efn"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"

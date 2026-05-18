@@ -1,0 +1,82 @@
+/*    */ package com.pla.annoyingvillagers.combatbehaviour;
+/*    */ 
+/*    */ import com.pla.annoyingvillagers.entity.SteveEntity;
+/*    */ import com.pla.annoyingvillagers.gameasset.AVAnimations;
+/*    */ import com.pla.annoyingvillagers.init.AnnoyingVillagersModSounds;
+/*    */ import com.pla.annoyingvillagers.task.DelayedTask;
+/*    */ import net.minecraft.core.particles.ParticleOptions;
+/*    */ import net.minecraft.core.particles.ParticleTypes;
+/*    */ import net.minecraft.server.level.ServerLevel;
+/*    */ import net.minecraft.sounds.SoundEvent;
+/*    */ import net.minecraft.sounds.SoundSource;
+/*    */ import yesman.epicfight.api.asset.AssetAccessor;
+/*    */ import yesman.epicfight.world.capabilities.entitypatch.MobPatch;
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ class null
+/*    */   extends DelayedTask
+/*    */ {
+/*    */   null(int waitTicks) {
+/* 33 */     super(waitTicks);
+/*    */   }
+/*    */   public void run() {
+/* 36 */     serverLevel.m_6263_(null, steveEntity
+/*    */         
+/* 38 */         .m_20185_(), steveEntity.m_20186_(), steveEntity.m_20189_(), (SoundEvent)AnnoyingVillagersModSounds.HEAVY_ATTACK_START
+/* 39 */         .get(), SoundSource.NEUTRAL, 1.0F, 1.0F);
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */     
+/* 44 */     serverLevel.m_6263_(null, steveEntity
+/*    */         
+/* 46 */         .m_20185_(), steveEntity.m_20186_(), steveEntity.m_20189_(), (SoundEvent)AnnoyingVillagersModSounds.HEAVY_ATTACK_LEGENDARY_SWORD
+/* 47 */         .get(), SoundSource.NEUTRAL, 1.0F, 1.0F);
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */     
+/* 52 */     serverLevel.m_6263_(null, steveEntity
+/*    */         
+/* 54 */         .m_20185_(), steveEntity.m_20186_(), steveEntity.m_20189_(), (SoundEvent)AnnoyingVillagersModSounds.HEAVY_ATTACK_LEGENDARY_SWORD_2
+/* 55 */         .get(), SoundSource.NEUTRAL, 1.0F, 1.0F);
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */     
+/* 60 */     serverLevel.m_8767_((ParticleOptions)ParticleTypes.f_123767_, steveEntity
+/*    */         
+/* 62 */         .m_20185_(), steveEntity.m_20186_(), steveEntity.m_20189_(), 15, 0.0D, 0.0D, 0.0D, 0.2D);
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */     
+/* 67 */     serverLevel.m_8767_((ParticleOptions)ParticleTypes.f_123767_, steveEntity
+/*    */         
+/* 69 */         .m_20185_(), steveEntity.m_20188_(), steveEntity.m_20189_(), 100, 0.0D, 0.0D, 0.0D, 0.5D);
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */     
+/* 74 */     mobpatch.playAnimationSynchronized((AssetAccessor)AVAnimations.LEGENDARY_SWORD_HEAVY_ATTACK, 0.0F);
+/*    */   }
+/*    */ }
+
+
+/* Location:              C:\Users\Aours\AppData\Roaming\PrismLauncher\instances\1.20.1 remake\minecraft\mods\AnnoyingVillagers-1.20.1-1.4.5.jar!\com\pla\annoyingvillagers\combatbehaviour\SteveLegendarySword$1.class
+ * Java compiler version: 17 (61.0)
+ * JD-Core Version:       1.1.3
+ */
