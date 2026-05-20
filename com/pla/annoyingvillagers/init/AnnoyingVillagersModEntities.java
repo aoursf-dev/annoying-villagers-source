@@ -1,10 +1,58 @@
 /*     */ package com.pla.annoyingvillagers.init;
+import com.pla.annoyingvillagers.entity.AegisHerobrineEntity;
+import com.pla.annoyingvillagers.entity.AlexEntity;
+import com.pla.annoyingvillagers.entity.AngrySteveEntity;
 /*     */ import com.pla.annoyingvillagers.entity.ArmoredHerobrineEntity;
+import com.pla.annoyingvillagers.entity.BbqEntity;
+import com.pla.annoyingvillagers.entity.BlockProjectileEntity;
+import com.pla.annoyingvillagers.entity.BlueDemonEntity;
+import com.pla.annoyingvillagers.entity.BlueDemonThrownTridentEntity;
+import com.pla.annoyingvillagers.entity.BlueDemonThunderBeamEntity;
+import com.pla.annoyingvillagers.entity.BlueVillagerGeneralEntity;
 /*     */ import com.pla.annoyingvillagers.entity.ChrisEntity;
+import com.pla.annoyingvillagers.entity.DragonBeamEntity;
+import com.pla.annoyingvillagers.entity.DragonMeteoriteEntity;
+import com.pla.annoyingvillagers.entity.ElectricAreaEntity;
+import com.pla.annoyingvillagers.entity.EliteHerobrineKnockedEntity;
+import com.pla.annoyingvillagers.entity.EnchantedArrowEntity;
+import com.pla.annoyingvillagers.entity.EnchantedEnderPearlEntity;
+import com.pla.annoyingvillagers.entity.EnderAegisProjectile;
+import com.pla.annoyingvillagers.entity.GlaiveHerobrineEntity;
+import com.pla.annoyingvillagers.entity.GreenVillagerGeneralEntity;
 /*     */ import com.pla.annoyingvillagers.entity.Herobrine7Entity;
+import com.pla.annoyingvillagers.entity.HerobrineChrisEntity;
 /*     */ import com.pla.annoyingvillagers.entity.HerobrineCloneEntity;
+import com.pla.annoyingvillagers.entity.HerobrineDragonEntity;
+import com.pla.annoyingvillagers.entity.HerobrineGregEntity;
+import com.pla.annoyingvillagers.entity.HerobrineWardenEntity;
+import com.pla.annoyingvillagers.entity.InfectedChrisEntity;
+import com.pla.annoyingvillagers.entity.InfectedPlayerNpcEntity;
+import com.pla.annoyingvillagers.entity.InfectedTheMostMoistBurrit0Entity;
+import com.pla.annoyingvillagers.entity.JevEntity;
+import com.pla.annoyingvillagers.entity.LowHerobrineCloneEntity;
 /*     */ import com.pla.annoyingvillagers.entity.LowShadowHerobrineCloneEntity;
+import com.pla.annoyingvillagers.entity.NullAxeEntity;
+import com.pla.annoyingvillagers.entity.NullEntity;
+import com.pla.annoyingvillagers.entity.NullHoeEntity;
+import com.pla.annoyingvillagers.entity.NullPickaxeEntity;
+import com.pla.annoyingvillagers.entity.NullShovelEntity;
+import com.pla.annoyingvillagers.entity.NullSkeletonEntity;
+import com.pla.annoyingvillagers.entity.NullSwordEntity;
+import com.pla.annoyingvillagers.entity.ObsidianSledgehammerProjectileEntity;
+import com.pla.annoyingvillagers.entity.PatrolVillagerEntity;
+import com.pla.annoyingvillagers.entity.PlayerNpcEntity;
+import com.pla.annoyingvillagers.entity.PurpleVillagerGeneralEntity;
+import com.pla.annoyingvillagers.entity.ReaperHerobrineEntity;
 /*     */ import com.pla.annoyingvillagers.entity.RedVillagerGeneralEntity;
+import com.pla.annoyingvillagers.entity.ShadowHerobrineCloneEntity;
+import com.pla.annoyingvillagers.entity.ShadowHerobrineEntity;
+import com.pla.annoyingvillagers.entity.ShockWaveBlockEntity;
+import com.pla.annoyingvillagers.entity.SledgehammerHerobrineEntity;
+import com.pla.annoyingvillagers.entity.SnakeBladeEntity;
+import com.pla.annoyingvillagers.entity.SteveEntity;
+import com.pla.annoyingvillagers.entity.SwordsmanHerobrineEntity;
+import com.pla.annoyingvillagers.entity.ThrownPoisonEggEntity;
+import com.pla.annoyingvillagers.entity.TridentLightningBolt;
 /*     */ import com.pla.annoyingvillagers.entity.VillagerScoutCaptainEntity;
 /*     */ import com.pla.annoyingvillagers.entity.VillagerScoutEntity;
 /*     */ import java.util.function.BiFunction;
@@ -31,7 +79,12 @@
 /*  31 */   public static final RegistryObject<EntityType<PurpleVillagerGeneralEntity>> GREEN_VILLAGER_GENERAL = register("green_villager_general", EntityType.Builder.m_20704_(PurpleVillagerGeneralEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(PurpleVillagerGeneralEntity::new).m_20699_(0.6F, 1.8F));
 /*  32 */   public static final RegistryObject<EntityType<RedVillagerGeneralEntity>> RED_VILLAGER_GENERAL = register("red_villager_general", EntityType.Builder.m_20704_(RedVillagerGeneralEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(RedVillagerGeneralEntity::new).m_20699_(0.6F, 1.8F));
 /*  33 */   public static final RegistryObject<EntityType<GreenVillagerGeneralEntity>> PURPLE_VILLAGER_GENERAL = register("purple_villager_general", EntityType.Builder.m_20704_(GreenVillagerGeneralEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(GreenVillagerGeneralEntity::new).m_20699_(0.6F, 1.8F));
-/*     */   
+/*     */   public static final RegistryObject<EntityType<PatrolVillagerEntity>> PATROL_VILLAGER = register("patrol_villager", 
+    EntityType.Builder.<PatrolVillagerEntity>of(PatrolVillagerEntity::new, MobCategory.CREATURE)
+        .setShouldReceiveVelocityUpdates(true)
+        .setTrackingRange(128)
+        .setUpdateInterval(3)
+        .sized(0.6F, 1.8F));
 /*  35 */   public static final RegistryObject<EntityType<AlexEntity>> ALEX = register("alex", EntityType.Builder.m_20704_(AlexEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(AlexEntity::new).m_20699_(0.6F, 1.8F));
 /*  36 */   public static final RegistryObject<EntityType<JevEntity>> JEV = register("jev", EntityType.Builder.m_20704_(JevEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(JevEntity::new).m_20699_(0.6F, 1.8F));
 /*  37 */   public static final RegistryObject<EntityType<BbqEntity>> BBQ = register("bbq", EntityType.Builder.m_20704_(BbqEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(BbqEntity::new).m_20699_(0.4F, 0.7F));
@@ -222,8 +275,15 @@
 /*     */     
 /* 223 */     event.register((EntityType)GREEN_VILLAGER_GENERAL
 /* 224 */         .get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, PurpleVillagerGeneralEntity::canSpawn, SpawnPlacementRegisterEvent.Operation.REPLACE);
-/*     */   }
+/*     */   
 /*     */ 
+/*     */ 
+/*     */ 
+/*     */     event.register(PATROL_VILLAGER.get(), SpawnPlacements.Type.ON_GROUND, 
+    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 
+    BlueVillagerGeneralEntity::canSpawn,  // có thể dùng chung hàm canSpawn
+    SpawnPlacementRegisterEvent.Operation.REPLACE);   
+/*     */   }
 /*     */ 
 /*     */ 
 /*     */ 
@@ -239,6 +299,8 @@
 /* 239 */     entityPatchRegistryEvent.getTypeEntry().put((EntityType)GREEN_VILLAGER_GENERAL.get(), entity -> com.pla.annoyingvillagers.mobpatch.VillagerGeneralPatch::new);
 /* 240 */     entityPatchRegistryEvent.getTypeEntry().put((EntityType)PURPLE_VILLAGER_GENERAL.get(), entity -> com.pla.annoyingvillagers.mobpatch.VillagerGeneralPatch::new);
 /* 241 */     entityPatchRegistryEvent.getTypeEntry().put((EntityType)STEVE.get(), entity -> com.pla.annoyingvillagers.mobpatch.StevePatch::new);
+              entityPatchRegistryEvent.getTypeEntry().put(PATROL_VILLAGER.get(), 
+    entity -> com.pla.annoyingvillagers.mobpatch.VillagerGeneralPatch::new);
 /* 242 */     entityPatchRegistryEvent.getTypeEntry().put((EntityType)ANGRY_STEVE.get(), entity -> com.pla.annoyingvillagers.mobpatch.AngryStevePatch::new);
 /* 243 */     entityPatchRegistryEvent.getTypeEntry().put((EntityType)ALEX.get(), entity -> com.pla.annoyingvillagers.mobpatch.AlexPatch::new);
 /* 244 */     entityPatchRegistryEvent.getTypeEntry().put((EntityType)JEV.get(), entity -> com.pla.annoyingvillagers.mobpatch.JevPatch::new);
@@ -278,6 +340,8 @@
 /* 278 */     entityAttributeCreationEvent.put((EntityType)GREEN_VILLAGER_GENERAL.get(), PurpleVillagerGeneralEntity.createAttributes().m_22265_());
 /* 279 */     entityAttributeCreationEvent.put((EntityType)RED_VILLAGER_GENERAL.get(), RedVillagerGeneralEntity.createAttributes().m_22265_());
 /* 280 */     entityAttributeCreationEvent.put((EntityType)PURPLE_VILLAGER_GENERAL.get(), GreenVillagerGeneralEntity.createAttributes().m_22265_());
+entityAttributeCreationEvent.put(PATROL_VILLAGER.get(), 
+    BlueVillagerGeneralEntity.createAttributes().build());
 /* 281 */     entityAttributeCreationEvent.put((EntityType)ALEX.get(), AlexEntity.createAttributes().m_22265_());
 /* 282 */     entityAttributeCreationEvent.put((EntityType)JEV.get(), JevEntity.createAttributes().m_22265_());
 /* 283 */     entityAttributeCreationEvent.put((EntityType)BBQ.get(), BbqEntity.m_28263_().m_22265_());

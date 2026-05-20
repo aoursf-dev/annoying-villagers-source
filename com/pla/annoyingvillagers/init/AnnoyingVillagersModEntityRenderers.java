@@ -27,8 +27,8 @@
 /*  27 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.GREEN_VILLAGER_GENERAL.get(), com.pla.annoyingvillagers.client.renderer.PurpleVillagerGeneralRenderer::new);
 /*  28 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.RED_VILLAGER_GENERAL.get(), com.pla.annoyingvillagers.client.renderer.RedVillagerGeneralRenderer::new);
 /*  29 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.PURPLE_VILLAGER_GENERAL.get(), com.pla.annoyingvillagers.client.renderer.GreenVillagerGeneralRenderer::new);
-/*  30 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.ENCHANTED_ENDER_PEARL_PROJECTILE.get(), net.minecraft.client.renderer.entity.ThrownItemRenderer::new);
-/*  31 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.THROWN_POISON_EGG.get(), net.minecraft.client.renderer.entity.ThrownItemRenderer::new);
+/*  30 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.PATROL_VILLAGER.get(), com.pla.annoyingvillagers.client.renderer.BlueVillagerGeneralRenderer::new);
+/*  31 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.ENCHANTED_ENDER_PEARL_PROJECTILE.get(), net.minecraft.client.renderer.entity.ThrownItemRenderer::new);
 /*  32 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.ENDER_AEGIS_PROJECTILE.get(), net.minecraft.client.renderer.entity.ThrownItemRenderer::new);
 /*  33 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.ALEX.get(), com.pla.annoyingvillagers.client.renderer.AlexRenderer::new);
 /*  34 */     registerrenderers.registerEntityRenderer((EntityType)AnnoyingVillagersModEntities.JEV.get(), com.pla.annoyingvillagers.client.renderer.JevRenderer::new);
@@ -97,7 +97,7 @@
 /*     */     
 /*  98 */     add.addPatchedEntityRenderer((EntityType)AnnoyingVillagersModEntities.PURPLE_VILLAGER_GENERAL.get(), entitytype -> (new PHumanoidRenderer((AssetAccessor)Meshes.BIPED, add.getContext(), entitytype)).initLayerLast(add.getContext(), entitytype));
 /*     */ 
-/*     */     
+/*     */     add.addPatchedEntityRenderer((EntityType)AnnoyingVillagersModEntities.PATROL_VILLAGER.get(), entitytype -> (new PHumanoidRenderer((AssetAccessor)Meshes.BIPED, add.getContext(), entitytype)).initLayerLast(add.getContext(), entitytype));
 /* 101 */     add.addPatchedEntityRenderer((EntityType)AnnoyingVillagersModEntities.STEVE.get(), entitytype -> (new PHumanoidRenderer((AssetAccessor)Meshes.BIPED, add.getContext(), entitytype)).initLayerLast(add.getContext(), entitytype));
 /*     */ 
 /*     */     
